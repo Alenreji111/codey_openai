@@ -10,10 +10,29 @@ function loader(element){
   element.textContent =""
 
   loaderInterval=setInterval(()=>{
-    element.textContent=+'.'
+    element.textContent+='.'
 
     if(element.textContent==="..."){
       element.textContent=""
     }
   },300)
+}
+
+function typeText(element,text ){
+  let index =0
+
+  let interval = setInterval(()=>{
+    
+    if(index<text.lenght){
+        element.innerText+=text.chartAt(index)
+        index++
+      
+    }else{
+     clearInterval(interval)
+    }
+  },20)
+  
+  
+
+
 }
