@@ -1,0 +1,12 @@
+{
+  "name": "codey_openai_server",
+  "version": "1.0.0",
+  "description": "server for our chatgpt clone",
+  "main": "index.js",
+  "scripts": {
+    "dev":"nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Alen Reji",
+  "license": "MIT"
+}
