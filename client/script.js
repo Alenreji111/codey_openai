@@ -24,15 +24,17 @@ function typeText(element,text ){
   let interval = setInterval(()=>{
     
     if(index<text.lenght){
-        element.innerText+=text.chartAt(index)
+        element.innerText+=text.charAt(index)
         index++
       
     }else{
      clearInterval(interval)
     }
   },20)
-  
-  
+}
 
-
+function genarateUniqueId(){
+  let dateId=Date.now()
+  let randomId = Math.random()
+  let hexadecimalstring = randomId.toString(16)
 }
